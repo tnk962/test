@@ -12,14 +12,23 @@
     messagingSenderId: "335011502254"
   };
   firebase.initializeApp(config);
+  
+  var database=firebase.database();
+  
 </script>
 
 </head>
 
 <body>
 
+  <script>
+    var texts = database.ref('投稿者/');
+    console(texts);
+  </script>
+    
+<!---
 <script src="scripts/main.js"></script>
-
+--->
 
 </body>
 
